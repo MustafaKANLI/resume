@@ -1,22 +1,26 @@
-import logo from "./logo.svg";
-import React from "react";
-import { Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter as Router, useRoutes, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Home from "./Pages/Home/Home";
 import Skills from "./Pages/Skills/Skills";
 import Projects from "./Pages/Projects/Projects";
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </Router>
-    </div>
-  );
-}
+const App = () => {
+  let routes = useRoutes([
+    { path: "*", element: <Navigate to="/" /> },
+    { path: "/", element: <Home /> },
+    { path: "/skills", element: <Skills /> },
+    { path: "/projects", element: <Projects /> },
+  ]);
+  return routes;
+};
 
-export default App;
+const AppWrapper = () => {
+  return (
+    <Router>
+      <Navbar />
+      <App />
+    </Router>
+  );
+};
+
+export default AppWrapper;
