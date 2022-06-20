@@ -3,10 +3,9 @@
   height: 529px;
   display: grid;
   column-gap: 30px;
-  grid-template-columns: auto auto;
-}
-
-.profileDiv {
+  grid-template-columns: auto auto auto;
+  background-color: rgb(33, 33, 33);
+  color: goldenrod;
 }
 
 .profile {
