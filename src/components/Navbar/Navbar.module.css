@@ -1,43 +1,77 @@
 .header {
-  height: 4rem;
-  background-color: rgb(33, 33, 33);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-width: 15rem;
+  min-height: 721px;
+  background-color: rgba(33, 33, 33, 1);
+  box-shadow: rgba(0, 0, 0, 0.9) 7px 0 3px;
+
   padding: 0 1rem;
-  box-shadow: rgba(0, 0, 0, 0.8) 0px 1.95px 3px;
-  position: relative;
-  top: 0;
-  left: 0;
+}
+
+.header h3 {
+  color: goldenrod;
 }
 
 .navBar {
   height: 4.5rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   user-select: none;
 }
-.link {
-  height: 4.5rem;
+
+.profile {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  display: flex !important;
+  justify-content: center !important ;
   align-items: center;
+  margin: 2rem auto;
+  border-radius: 50%;
+  animation-name: profile;
+  animation-duration: 0.5s;
+}
+
+.profile:hover {
+  border-radius: 20%;
+  animation-name: profileHover;
+  animation-duration: 0.5s;
+}
+
+@keyframes profileHover {
+  from {
+    border-radius: 50%;
+  }
+  to {
+    border-radius: 20%;
+  }
+}
+
+@keyframes profile {
+  from {
+    border-radius: 20%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+
+.link {
+  height: 2.5rem;
   display: flex;
-  padding: 0 1rem;
+  justify-content: left;
+  text-align: left;
+  align-items: center;
 }
 
 .link:hover {
   color: goldenrod;
 }
 
+.link:visited {
+  color: goldenrod;
+}
+
 .profileBar {
   display: flex;
   padding-right: 1rem;
-}
-.logo {
-  width: 10em;
-  height: 3rem;
-  margin: 0;
-  margin-right: 2rem;
 }
 
 .header a {

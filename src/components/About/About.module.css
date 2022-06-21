@@ -1,15 +1,15 @@
 .wrapper {
   padding: 4rem 3rem;
-  height: 529px;
+  height: 593px;
   display: grid;
   column-gap: 30px;
-  grid-template-columns: auto auto auto;
-  background-color: rgb(33, 33, 33);
+  grid-template-columns: auto auto;
+  background-color: rgba(33, 33, 33, 0.97);
   color: goldenrod;
 }
 
 .profile {
-  height: 28rem;
+  height: 30vw;
   border-radius: 0;
   animation-name: profile;
   animation-duration: 0.5s;

@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./Navbar.module.css";
+import Profile from "../../resources/Pictures/profile2.jpg";
 
 const Navbar = (props) => {
   return (
     <header className={classes.header}>
       <div className={classes.navBar}>
+        <div>
+          <img className={classes.profile} src={Profile} />
+        </div>
+        <h3>Mustafa Nur KANLI</h3>
         <Link to="/">
           <div className={classes.link}>Home</div>
         </Link>

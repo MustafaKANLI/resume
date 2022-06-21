@@ -4,6 +4,8 @@ import Home from "./Pages/Home/Home";
 import Skills from "./Pages/Skills/Skills";
 import Projects from "./Pages/Projects/Projects";
 
+import classes from "./App.module.css";
+
 const App = () => {
   let routes = useRoutes([
     { path: "*", element: <Navigate to="/" /> },
@@ -17,8 +19,10 @@ const App = () => {
 const AppWrapper = () => {
   return (
     <Router>
-      <Navbar />
-      <App />
+      <div className={classes.wrapper}>
+        <Navbar />
+        <App />
+      </div>
     </Router>
   );
 };
