@@ -1,13 +1,35 @@
-.header {
+.menuButton {
+  height: 2rem;
+  width: 2rem;
+
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1vw;
+  left: 1vh;
+  z-index: 1000;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.headerOpen {
   min-width: 15rem;
   min-height: 721px;
   background-color: rgba(33, 33, 33, 1);
   box-shadow: rgba(0, 0, 0, 0.9) 7px 0 3px;
-
+  transition: 0.5s;
   padding: 0 1rem;
 }
 
-.header h3 {
+.headerClosed {
+  display: none;
+}
+
+.headerOpen h3 {
   color: goldenrod;
 }
 
@@ -74,7 +96,7 @@
   padding-right: 1rem;
 }
 
-.header a {
+.headerOpen a {
   text-decoration: none;
   color: rgb(134, 134, 134);
 
@@ -97,4 +119,36 @@
   background-color: white;
   border-radius: 0;
   user-select: none;
+}
+
+@media (max-width: 900px) {
+  .headerOpen {
+    transition: 0.5s;
+    display: none !important;
+  }
+
+  .headerClosed {
+    display: initial !important;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 100;
+
+    min-width: 15rem;
+    min-height: 721px;
+    background-color: rgba(33, 33, 33, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.2) 7px 0 3px;
+
+    padding: 0 1rem;
+  }
+
+  .headerClosed h3 {
+    color: goldenrod;
+  }
+
+  .headerClosed a {
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+
+    font-weight: bold;
+  }
 }

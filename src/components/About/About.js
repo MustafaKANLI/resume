@@ -9,7 +9,7 @@ const About = () => {
         <img className={classes.profile} src={Profile} />
       </div>
       <div>
-        <h2>Mustafa Nur KANLI</h2>
+        <h3>Computer Science Engineer</h3>
         <div>
           I am a third year student at Akdeniz University Computer Engineering.
           I am a person who constantly researches, develops himself, loves

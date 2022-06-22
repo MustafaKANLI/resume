@@ -38,3 +38,10 @@
     border-radius: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: auto;
+    row-gap: 0;
+  }
+}
