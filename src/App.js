@@ -20,7 +20,7 @@ const AppWrapper = () => {
   return (
     <Router>
       <div className={classes.wrapper}>
-        <Navbar />
+        <Navbar className={classes.navBar} />
         <App />
       </div>
     </Router>

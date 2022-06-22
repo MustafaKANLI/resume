@@ -26,24 +26,27 @@ const Navbar = (props) => {
           <AiOutlineMenu onClick={closeButtonHandler} />
         )}
       </button>
-      <header className={isOpen ? classes.headerOpen : classes.headerClosed}>
-        <div className={classes.navBar}>
-          <div>
-            <img className={classes.profile} src={Profile} />
-          </div>
-          <h3>Mustafa Nur KANLI</h3>
-          <Link to="/">
-            <div className={classes.link}>Home</div>
-          </Link>
-          <Link to="/skills">
-            <div className={classes.link}>Skills</div>
-          </Link>
 
-          <Link to="/projects">
-            <div className={classes.link}>Projects</div>
-          </Link>
-        </div>
-      </header>
+      <div className={classes.navBarDiv}>
+        <header className={isOpen ? classes.headerOpen : classes.headerClosed}>
+          <div className={classes.navBar}>
+            <div>
+              <img className={classes.profile} src={Profile} />
+            </div>
+            <h3>Mustafa Nur KANLI</h3>
+            <Link to="/">
+              <div className={classes.link}>Home</div>
+            </Link>
+            <Link to="/skills">
+              <div className={classes.link}>Skills</div>
+            </Link>
+
+            <Link to="/projects">
+              <div className={classes.link}>Projects</div>
+            </Link>
+          </div>
+        </header>
+      </div>
     </>
   );
 };

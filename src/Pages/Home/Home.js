@@ -7,6 +7,8 @@ const Home = () => {
   return (
     <div>
       <div className={classes.videoDiv}>
+        <h1 className={classes.nameTitle}>Mustafa Nur KANLI</h1>
+        <div className={classes.grey}></div>
         <video className={classes.video} autoPlay muted loop id="myVideo">
           <source src={video} type="video/mp4" />
         </video>

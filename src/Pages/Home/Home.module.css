@@ -1,5 +1,22 @@
 .videoDiv {
   position: relative;
+  background-color: rgba(33, 33, 33, 0.97);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grey {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.5);
+}
+
+.nameTitle {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
 }
 
 .video {
