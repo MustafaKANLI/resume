@@ -1,21 +1,37 @@
 .wrapper {
   padding: 4rem 3rem;
-  height: 593px;
-  display: grid;
-  column-gap: 30px;
-  grid-template-columns: auto auto;
+  height: 100vh;
+
   background-color: rgba(33, 33, 33, 0.97);
   color: goldenrod;
 }
 
-.profile {
+.info {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: auto auto;
+}
+
+.profilePicDiv {
   height: 30vw;
+  display: flex;
+  justify-content: center;
   border-radius: 0;
   animation-name: profile;
   animation-duration: 0.5s;
 }
 
-.profile:hover {
+.picture {
+  height: 25vw;
+}
+
+.listDiv {
+  display: grid;
+  column-gap: 0;
+  grid-template-columns: auto auto;
+}
+
+.picture:hover {
   border-radius: 10%;
   animation-name: profileHover;
   animation-duration: 0.5s;
@@ -39,9 +55,17 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .wrapper {
     grid-template-columns: auto;
     row-gap: 0;
+  }
+
+  .profilePicDiv {
+    height: 70vw;
+  }
+
+  .picture {
+    height: 70vw;
   }
 }
