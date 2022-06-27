@@ -7,16 +7,17 @@
 }
 
 .workBlock {
-  display: flex;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 6rem auto;
 }
 
 .workBlock div + div {
-  margin: 0 3rem;
+  margin: 0 1rem;
 }
 
 .year {
-  padding: 0 1rem;
-  min-width: 6rem;
+  padding-right: 1rem;
   border-right: 1px solid grey;
 }
 
@@ -24,4 +25,17 @@
   .wrapper {
     padding: 1rem 2rem;
   }
+  .year {
+    padding: 0 1rem;
+    border: none;
+  }
+  .workBlock {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+.hr {
+  border-top: 1px solid lightgray;
+  margin: 1rem 0;
 }

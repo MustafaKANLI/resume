@@ -5,6 +5,8 @@ const Resume = () => {
   return (
     <div className={classes.wrapper}>
       <h3>Resume</h3>
+      <div className={classes.hr}></div>
+
       <h4>Work Experience</h4>
       <div className={classes.workBlock}>
         <div className={classes.year}>
@@ -16,6 +18,7 @@ const Resume = () => {
           <p>I was long term intern in TAI. </p>
         </div>
       </div>
+      <div className={classes.hr}></div>
 
       <h4>Education</h4>
       <div className={classes.workBlock}>
@@ -36,6 +39,8 @@ const Resume = () => {
           <h5>İMKB Süleyman Demirel Science High School </h5>
         </div>
       </div>
+
+      <div className={classes.hr}></div>
 
       <h4>Communities</h4>
       <div className={classes.workBlock}>
@@ -73,6 +78,8 @@ const Resume = () => {
           </p>
         </div>
       </div>
+
+      <div className={classes.hr}></div>
 
       <h4>Seminars {"&"} Certificates</h4>
       <div className={classes.workBlock}>
