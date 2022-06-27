@@ -2,7 +2,7 @@
   padding: 4rem 3rem;
   height: 100vh;
 
-  background-color: rgba(33, 33, 33, 0.97);
+  background-color: rgba(33, 33, 33, 1);
   color: goldenrod;
 }
 
@@ -11,18 +11,21 @@
   column-gap: 30px;
   grid-template-columns: auto auto;
 }
+a {
+  color: goldenrod;
+}
 
 .profilePicDiv {
   height: 30vw;
   display: flex;
   justify-content: center;
-  border-radius: 0;
-  animation-name: profile;
-  animation-duration: 0.5s;
 }
 
 .picture {
   height: 25vw;
+  border-radius: 0;
+  animation-name: picture;
+  animation-duration: 0.5s;
 }
 
 .listDiv {
@@ -33,11 +36,11 @@
 
 .picture:hover {
   border-radius: 10%;
-  animation-name: profileHover;
+  animation-name: pictureHover;
   animation-duration: 0.5s;
 }
 
-@keyframes profileHover {
+@keyframes pictureHover {
   from {
     border-radius: 0;
   }
@@ -46,7 +49,7 @@
   }
 }
 
-@keyframes profile {
+@keyframes picture {
   from {
     border-radius: 10%;
   }
@@ -57,8 +60,11 @@
 
 @media (max-width: 800px) {
   .wrapper {
+    padding: 4rem 2rem;
+
     grid-template-columns: auto;
     row-gap: 0;
+    height: 1000px;
   }
 
   .profilePicDiv {
@@ -67,5 +73,26 @@
 
   .picture {
     height: 70vw;
+  }
+
+  .listDiv {
+    display: grid;
+    column-gap: 0;
+    grid-template-columns: auto;
+  }
+
+  .info {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 1230px) {
+  .listDiv {
+    display: grid;
+    column-gap: 0;
+    grid-template-columns: auto;
+    padding: 0 !important;
   }
 }

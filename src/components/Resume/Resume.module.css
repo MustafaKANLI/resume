@@ -1,0 +1,27 @@
+.wrapper {
+  padding: 1rem 3rem;
+
+  min-height: 100vh;
+  background-color: rgba(33, 33, 33, 1);
+  color: goldenrod;
+}
+
+.workBlock {
+  display: flex;
+}
+
+.workBlock div + div {
+  margin: 0 3rem;
+}
+
+.year {
+  padding: 0 1rem;
+  min-width: 6rem;
+  border-right: 1px solid grey;
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    padding: 1rem 2rem;
+  }
+}

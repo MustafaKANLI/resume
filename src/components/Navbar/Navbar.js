@@ -8,7 +8,6 @@ import { AiOutlineClose } from "react-icons/ai";
 const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(true);
   let screenWidth = window.screen.availWidth;
-  console.log(screenWidth);
   const menuButtonHandler = () => {
     setIsOpen(false);
   };

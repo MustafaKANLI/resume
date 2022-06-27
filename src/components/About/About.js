@@ -3,6 +3,20 @@ import Profile from "../../resources/Pictures/profile2.jpg";
 import classes from "./About.module.css";
 
 const About = () => {
+  function getAge(d1) {
+    var now = new Date();
+    var d2 = new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate(),
+      23,
+      59,
+      59
+    );
+    var diff = d2.getTime() - d1.getTime();
+    return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+  }
+
   return (
     <div className={classes.wrapper}>
       <div className={classes.info}>
@@ -24,7 +38,9 @@ const About = () => {
                 <li>
                   <p>
                     <strong>Phone: </strong>
-                    +90 553 588 5367
+                    <a href="tel:+905535885367" target="_blank">
+                      +90 553 588 5367
+                    </a>
                   </p>
                 </li>
                 <li>
@@ -39,20 +55,22 @@ const About = () => {
               <ul>
                 <li>
                   <p>
-                    <strong>Birthday: </strong>
-                    08 November 1999
+                    <strong>Age: </strong>
+                    {getAge(new Date(1999, 11, 8, 0, 0, 0))}
                   </p>
                 </li>
                 <li>
                   <p>
-                    <strong>Phone: </strong>
-                    +90 553 588 5367
+                    <strong>E-mail: </strong>
+                    <a href="mailto:mustafakanli98@gmail.com" target="_blank">
+                      mustafakanli98@gmail.com
+                    </a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <strong>City: </strong>
-                    Antalya / Turkey
+                    <strong>Degree: </strong>
+                    Baheclor Degree
                   </p>
                 </li>
               </ul>
