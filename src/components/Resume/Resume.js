@@ -116,6 +116,7 @@ const Resume = () => {
         <div className={classes.year}>
           <h5>2018</h5>
         </div>
+
         <div>
           <h5>Digital Financial Literacy Training</h5>
 
