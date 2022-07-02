@@ -70,7 +70,7 @@ const About = () => {
                 <li>
                   <p>
                     <strong>Degree: </strong>
-                    Baheclor Degree
+                    Bachelor Degree
                   </p>
                 </li>
               </ul>
@@ -84,6 +84,11 @@ const About = () => {
         am a person who constantly researches, develops himself, loves listening
         to music and doing sports, has entrepreneurial ideas, invests in his own
         future, and can easily adapt.
+        <br></br>
+        I'm working about the Full-Stack Web Development. So that, I use React
+        for the front-end. I used Node.Js for the back-end. However, I didn't
+        use any frameworks. So that, I don't make any complicate project. I'm
+        learning to .Net for the back-end. I will go away to this way.
       </div>
     </div>
   );
