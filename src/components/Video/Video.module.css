@@ -33,7 +33,7 @@
 }
 
 h3 + h3 {
-  margin: 0.6rem;
+  margin: 0.6rem !important;
 }
 
 .explainTitle {

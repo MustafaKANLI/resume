@@ -8,7 +8,7 @@ const Video = () => {
       <h1 className={classes.nameTitle}>Mustafa Nur KANLI</h1>
       <div className={classes.explainDiv}>
         <h3>I'm </h3>
-        <h3 className={classes.explainTitle}>Computer Science Engineer</h3>
+        <h3 className={classes.explainTitle}> Computer Science Engineer</h3>
       </div>
       <div className={classes.grey}></div>
       <div className={classes.videoDiv}>

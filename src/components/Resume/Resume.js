@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Resume.module.css";
+import ResumeCard from "./ResumeCard";
 
 const Resume = () => {
   return (
@@ -18,6 +19,15 @@ const Resume = () => {
           <p>I was long term intern in TAI. </p>
         </div>
       </div>
+      <br></br>
+
+      <ResumeCard
+        year="2022"
+        firstHeader="Turkish Aerospace"
+        secondHeader="Sky Discover"
+        explanation="Summer  Internship"
+      />
+
       <div className={classes.hr}></div>
 
       <h4>Education</h4>
