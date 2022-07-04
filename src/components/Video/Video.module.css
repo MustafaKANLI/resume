@@ -18,6 +18,7 @@
   color: #fff;
   position: absolute;
   z-index: 1;
+  top: 43%;
 }
 
 .explainDiv {
@@ -27,7 +28,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  top: 51%;
+  top: 52%;
   z-index: 1;
 }
 
