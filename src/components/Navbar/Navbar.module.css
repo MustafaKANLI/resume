@@ -45,8 +45,10 @@
   user-select: none;
   min-width: 15rem;
   min-height: 721px;
-  transition: 0.5s;
   position: fixed;
+
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
 .profile {
@@ -66,6 +68,33 @@
   border-radius: 10%;
   animation-name: profileHover;
   animation-duration: 0.5s;
+}
+
+@keyframes slide {
+  from {
+    display: inline;
+  }
+  to {
+    display: none;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeClose {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes profileHover {
@@ -116,13 +145,13 @@
 
 @media (max-width: 900px) {
   .headerOpen {
-    transition: 0.5s;
     display: none !important;
+    animation-name: fadeClose;
+    animation-duration: 2s;
   }
 
   .headerClosed {
     display: initial !important;
-    transition: 0.5s;
     position: fixed;
     z-index: 100;
 
@@ -132,6 +161,8 @@
     box-shadow: rgba(0, 0, 0, 0.2) 7px 0 3px;
 
     padding: 0 1rem;
+    animation-name: fade;
+    animation-duration: 1s;
   }
 
   .headerClosed h3 {

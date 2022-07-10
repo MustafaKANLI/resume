@@ -1,0 +1,21 @@
+.wrapper {
+  height: 100%;
+  width: 100vw;
+  background-color: #fff;
+  padding: 2rem 3rem;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  column-gap: 3rem;
+  row-gap: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}
