@@ -20,13 +20,13 @@ const Navbar = (props) => {
     <>
       <button className={classes.menuButton}>
         {isOpen ? (
-          <AiOutlineClose onClick={menuButtonHandler} />
+          <AiOutlineMenu onClick={menuButtonHandler} />
         ) : (
           <AiOutlineMenu onClick={closeButtonHandler} />
         )}
       </button>
 
-      <div className={classes.navBarDiv}>
+      <div className={classes.navBarDiv} onClick={closeButtonHandler}>
         <header className={isOpen ? classes.headerOpen : classes.headerClosed}>
           <div className={classes.navBar}>
             <div>

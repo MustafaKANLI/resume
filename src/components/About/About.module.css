@@ -2,8 +2,12 @@
   padding: 4rem 3rem;
   height: 100vh;
 
-  background-color: rgba(33, 33, 33, 1);
-  color: goldenrod;
+  background-color: #06283d;
+  color: #dff6ff;
+}
+
+.title {
+  color: gold;
 }
 
 .info {
@@ -12,7 +16,7 @@
   grid-template-columns: auto auto;
 }
 a {
-  color: goldenrod;
+  color: #47b5ff;
 }
 
 .profilePicDiv {
@@ -23,7 +27,7 @@ a {
 
 .picture {
   height: 25vw;
-  border-radius: 0;
+  border-radius: 10%;
   animation-name: picture;
   animation-duration: 0.5s;
 }
@@ -35,26 +39,26 @@ a {
 }
 
 .picture:hover {
-  border-radius: 10%;
+  border-radius: 0;
   animation-name: pictureHover;
   animation-duration: 0.5s;
 }
 
 @keyframes pictureHover {
   from {
-    border-radius: 0;
+    border-radius: 10%;
   }
   to {
-    border-radius: 10%;
+    border-radius: 0;
   }
 }
 
 @keyframes picture {
   from {
-    border-radius: 10%;
+    border-radius: 0;
   }
   to {
-    border-radius: 0;
+    border-radius: 10%;
   }
 }
 
@@ -68,11 +72,12 @@ a {
   }
 
   .profilePicDiv {
-    height: 70vw;
+    height: 70vw !important;
+    margin-bottom: 3rem;
   }
 
   .picture {
-    height: 70vw;
+    height: 70vw !important;
   }
 
   .listDiv {
@@ -94,5 +99,13 @@ a {
     column-gap: 0;
     grid-template-columns: auto;
     padding: 0 !important;
+  }
+
+  .profilePicDiv {
+    height: 35vw;
+  }
+
+  .picture {
+    height: 30vw;
   }
 }

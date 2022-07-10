@@ -25,7 +25,7 @@ const About = () => {
         </div>
 
         <div className={classes.about}>
-          <h3>Computer Science Engineer</h3>
+          <h3 className={classes.title}>Computer Science Engineer</h3>
           <div className={classes.listDiv}>
             <div>
               <ul>

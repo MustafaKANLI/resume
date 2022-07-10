@@ -29,7 +29,7 @@
   z-index: 1;
   padding: 0 1rem;
   background-color: rgba(33, 33, 33, 1);
-  box-shadow: rgba(0, 0, 0, 0.2) 7px 0 3px;
+  box-shadow: rgba(3, 21, 33, 0.4) 7px 0 3px;
 }
 
 .headerClosed {
@@ -37,7 +37,7 @@
 }
 
 .headerOpen h3 {
-  color: goldenrod;
+  color: #dff6ff;
 }
 
 .navBar {
@@ -95,11 +95,11 @@
 }
 
 .link:hover {
-  color: goldenrod;
+  color: #dff6ff;
 }
 
 .link:visited {
-  color: goldenrod;
+  color: #dff6ff;
 }
 
 .profileBar {
@@ -128,14 +128,14 @@
 
     min-width: 15rem;
     min-height: 721px;
-    background-color: rgba(33, 33, 33, 0.9);
+    background-color: rgba(5, 33, 51, 0.9);
     box-shadow: rgba(0, 0, 0, 0.2) 7px 0 3px;
 
     padding: 0 1rem;
   }
 
   .headerClosed h3 {
-    color: goldenrod;
+    color: #dff6ff;
   }
 
   .headerClosed a {

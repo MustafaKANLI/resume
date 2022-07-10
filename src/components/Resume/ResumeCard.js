@@ -9,9 +9,9 @@ const ResumeCard = (props) => {
           <h5>{props.year}</h5>
         </div>
         <div>
-          <h5>{props.firstHeader}</h5>
-          <h5>{props.secondHeader}</h5>
-          <p>{props.explanation}</p>
+          <h5 className={classes.header}>{props.firstHeader}</h5>
+          <h6 className={classes.header}>{props.secondHeader}</h6>
+          <p className={classes.text}>{props.explanation}</p>
         </div>
       </div>
     </div>

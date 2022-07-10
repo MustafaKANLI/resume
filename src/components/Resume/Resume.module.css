@@ -2,8 +2,17 @@
   padding: 1rem 3rem;
 
   min-height: 100vh;
-  background-color: rgba(33, 33, 33, 1);
-  color: goldenrod;
+  background-color: #06283d;
+  color: #dff6ff;
+}
+
+.title {
+  color: gold;
+}
+
+.cardTitle {
+  color: #47b5ff;
+  margin: 0.4rem 0 !important;
 }
 
 .workBlock {
@@ -21,17 +30,28 @@
   border-right: 1px solid grey;
 }
 
+.header {
+  margin: 0.3rem 0 !important;
+}
+
+.text {
+  color: lightgrey;
+  font-size: smaller;
+}
+
 @media (max-width: 800px) {
   .wrapper {
     padding: 1rem 2rem;
   }
   .year {
-    padding: 0 1rem;
     border: none;
   }
   .workBlock {
     display: grid;
     grid-template-columns: auto;
+  }
+  .workBlock div + div {
+    margin: 0;
   }
 }
 
