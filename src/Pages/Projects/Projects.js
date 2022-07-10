@@ -10,7 +10,11 @@ const Projects = () => {
         <h3>Projects</h3>
       </div>
       <div className={classes.grid}>
-        <Card src={Bildir}></Card>
+        <Card
+          src={Bildir}
+          liveLink="https://bildir.azurewebsites.net/"
+          githubLink="https://github.com/MustafaKANLI/BildirWebPublic"
+        />
         <Card src={Bildir}></Card>
         <Card src={Bildir}></Card>
         <Card src={Bildir}></Card>
