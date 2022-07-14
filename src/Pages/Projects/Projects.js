@@ -4,6 +4,7 @@ import Bildir from "../../resources/Pictures/bildir.png";
 import classes from "./Projects.module.css";
 
 const Projects = () => {
+  const numbers = ["Reactttt", "HTML", "CSS", "UI/UX", "sdfsdfs"];
   return (
     <div className={classes.wrapper}>
       <div>
@@ -14,12 +15,13 @@ const Projects = () => {
           src={Bildir}
           liveLink="https://bildir.azurewebsites.net/"
           githubLink="https://github.com/MustafaKANLI/BildirWebPublic"
+          numbers={numbers}
         />
-        <Card src={Bildir}></Card>
-        <Card src={Bildir}></Card>
-        <Card src={Bildir}></Card>
-        <Card src={Bildir}></Card>
-        <Card src={Bildir}></Card>
+        <Card src={Bildir} numbers={numbers}></Card>
+        <Card src={Bildir} numbers={numbers}></Card>
+        <Card src={Bildir} numbers={numbers}></Card>
+        <Card src={Bildir} numbers={numbers}></Card>
+        <Card src={Bildir} numbers={numbers}></Card>
       </div>
     </div>
   );
