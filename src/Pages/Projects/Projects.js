@@ -1,10 +1,15 @@
 import React from "react";
 import Card from "../../components/Cards/Card";
 import Bildir from "../../resources/Pictures/bildir.png";
+import Hotel from "../../resources/Pictures/hotel.png";
+import HotelDb from "../../resources/Pictures/hotelDb2.png";
 import classes from "./Projects.module.css";
 
 const Projects = () => {
-  const numbers = ["Reactttt", "HTML", "CSS", "UI/UX", "sdfsdfs"];
+  const tagsBildir = ["React", "HTML", "CSS", "UI/UX"];
+  const hotel = ["HTML", "CSS", "JavaScript", "PHP", "UI/UX"];
+  const hotelDb = ["Database", "Mysql"];
+
   return (
     <div className={classes.wrapper}>
       <div>
@@ -15,13 +20,28 @@ const Projects = () => {
           src={Bildir}
           liveLink="https://bildir.azurewebsites.net/"
           githubLink="https://github.com/MustafaKANLI/BildirWebPublic"
-          numbers={numbers}
+          tags={tagsBildir}
+          projectTitle="Bildir"
+          projectDescription="Event sharing platform. Communities share events and students can register to events and communities. Event sharing platform. Communities can share events and students can register to events and communities. "
         />
-        <Card src={Bildir} numbers={numbers}></Card>
-        <Card src={Bildir} numbers={numbers}></Card>
-        <Card src={Bildir} numbers={numbers}></Card>
-        <Card src={Bildir} numbers={numbers}></Card>
-        <Card src={Bildir} numbers={numbers}></Card>
+
+        <Card
+          src={Hotel}
+          githubLink="https://github.com/MustafaKANLI/Hotel"
+          tags={hotel}
+          projectTitle="Paradis Hotel"
+          projectDescription="Hotel reservation system. There are 2 interfaces. First interface is for the customers. They can make a reservation and they can see comments about the rooms. Other interface is for the admins. It's a classic admin panel. Admins can make reservations, add rooms, delete rooms, edit rooms (they can make CRUD operations)."
+        />
+        <Card
+          src={HotelDb}
+          tags={hotelDb}
+          githubLink="https://github.com/MustafaKANLI/Hotel/tree/master/src/database"
+          projectTitle="Paradis Hotel"
+          projectDescription="Database of hotel reservation system."
+        />
+        <Card src={Bildir} tags={tagsBildir}></Card>
+        <Card src={Bildir} tags={tagsBildir}></Card>
+        <Card src={Bildir} tags={tagsBildir}></Card>
       </div>
     </div>
   );

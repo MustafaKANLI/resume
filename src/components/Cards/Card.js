@@ -16,8 +16,8 @@ const Card = (props) => {
     setLive();
   });
 
-  const listItems = props.numbers?.map((number) => (
-    <Tag key={number.toString()} text={number}></Tag>
+  const listItems = props.tags?.map((tag) => (
+    <Tag key={tag.toString()} text={tag}></Tag>
   ));
 
   return (
@@ -43,7 +43,10 @@ const Card = (props) => {
       </div>
 
       <div className={classes.tags}>{listItems}</div>
-      <div>Project description</div>
+      <div className={classes.text}>
+        <h3>{props.projectTitle}</h3>
+        <p className={classes.textP}>{props.projectDescription}</p>
+      </div>
     </div>
   );
 };
