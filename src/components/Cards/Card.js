@@ -5,28 +5,17 @@ import Tag from "./Tags/Tag";
 
 const Card = (props) => {
   const [isLive, setIsLive] = useState(false);
-  //const [numberss, setNumbers] = useState([]);
 
-  //const navTo = useHref();
-  //setIsLive(props.setIsLive);
   const setLive = () => {
     if (props.liveLink) {
       setIsLive(true);
     }
   };
 
-  const liveButtonHandler = () => {
-    //  window.location.href(props.liveLink);
-  };
-
   useEffect(() => {
     setLive();
-    //setNumbers(props.numbers);
   });
 
-  console.log(props.numbers);
-
-  const numbers = ["React", "HTML", "CSS", "UI/UX", "Diffrent"];
   const listItems = props.numbers?.map((number) => (
     <Tag key={number.toString()} text={number}></Tag>
   ));
