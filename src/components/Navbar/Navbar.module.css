@@ -143,6 +143,38 @@
   font-weight: bold;
 }
 
+.contact {
+  display: flex;
+  color: lightgray;
+
+  justify-content: space-around;
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+}
+
+.contact a {
+  color: lightgray;
+}
+
+.contactButton {
+  padding: 0.2rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50px;
+  background-color: rgba(70, 70, 70, 0.7);
+}
+
+.contactButton:hover {
+  background-color: rgba(106, 106, 106, 0.7);
+}
+.contactButton:active {
+  background-color: rgba(129, 129, 129, 0.7);
+}
+
 @media (max-width: 900px) {
   .headerOpen {
     display: none !important;

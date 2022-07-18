@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Navbar.module.css";
 import Profile from "../../resources/Pictures/profile2.jpg";
-import { AiOutlineMenu } from "react-icons/ai";
-import { AiOutlineClose } from "react-icons/ai";
+import {
+  AiOutlineMenu,
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineMail,
+} from "react-icons/ai";
 
 const Navbar = (props) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -31,6 +35,29 @@ const Navbar = (props) => {
           <div className={classes.navBar}>
             <div>
               <img className={classes.profile} src={Profile} />
+              <div className={classes.contact}>
+                <div className={classes.contactButton}>
+                  <a
+                    href="https://www.linkedin.com/in/mustafakanli/"
+                    target="_blank"
+                  >
+                    <AiFillLinkedin />
+                  </a>
+                </div>
+                <div className={classes.contactButton}>
+                  <a
+                    href="https://www.github.com/mustafakanli/"
+                    target="_blank"
+                  >
+                    <AiFillGithub />
+                  </a>
+                </div>
+                <div className={classes.contactButton}>
+                  <a href="mailto:mustafakanli98@gmail.com" target="_blank">
+                    <AiOutlineMail />
+                  </a>
+                </div>
+              </div>
             </div>
             <h3>Mustafa Nur KANLI</h3>
             <Link to="/">
