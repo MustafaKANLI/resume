@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../components/Cards/Card";
-import Slideshow from "../../components/Slider/Slider";
+import Slider from "../../components/Slider/Slider";
 import Bildir from "../../resources/Pictures/bildir.png";
 import Hotel from "../../resources/Pictures/hotel.png";
 import HotelDb from "../../resources/Pictures/hotelDb2.png";
@@ -40,7 +40,7 @@ const Projects = () => {
           projectTitle="Paradis Hotel"
           projectDescription="Database of hotel reservation system."
         />
-        <Slideshow></Slideshow>
+        {/* <Slider></Slider> */}
       </div>
     </div>
   );
