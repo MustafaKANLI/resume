@@ -39,9 +39,6 @@ const Projects = () => {
           projectTitle="Paradis Hotel"
           projectDescription="Database of hotel reservation system."
         />
-        <Card src={Bildir} tags={tagsBildir}></Card>
-        <Card src={Bildir} tags={tagsBildir}></Card>
-        <Card src={Bildir} tags={tagsBildir}></Card>
       </div>
     </div>
   );
