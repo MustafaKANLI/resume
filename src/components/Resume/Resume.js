@@ -13,19 +13,21 @@ const Resume = () => {
       <div className={classes.hr}></div>
 
       <h4 className={classes.cardTitle}>Work Experience</h4>
-      <ResumeCard
-        year="2021 - 2022"
-        firstHeader="Turkish Aerospace"
-        secondHeader="Sky Experience"
-        explanation="Long-term  Internship"
-      />
-      <br></br>
 
       <ResumeCard
         year="2022"
         firstHeader="Turkish Aerospace"
         secondHeader="Sky Discover"
         explanation="Summer  Internship"
+      />
+
+      <br></br>
+
+      <ResumeCard
+        year="2021 - 2022"
+        firstHeader="Turkish Aerospace"
+        secondHeader="Sky Experience"
+        explanation="Long-term  Internship"
       />
 
       <div className={classes.hr}></div>
