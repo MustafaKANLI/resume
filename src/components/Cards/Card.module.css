@@ -1,10 +1,10 @@
 .wrapper {
   background-color: #eaf0f1;
   display: grid;
-  width: 20rem;
+  width: 30vw;
+  min-width: 20rem;
   height: 30rem;
   border-radius: 15px;
-
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 15px;
 }
@@ -66,4 +66,21 @@
   height: 6rem;
   text-align: left;
   color: gray;
+}
+
+@media (max-width: 1450px) {
+  .wrapper {
+    background-color: #eaf0f1;
+    display: grid;
+    width: 20vw;
+    min-width: 20rem;
+    height: 30rem;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 0 15px;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+  }
 }

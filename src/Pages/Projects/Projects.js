@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../../components/Cards/Card";
-import Slider from "../../components/Slider/Slider";
 import Bildir from "../../resources/Pictures/bildir.png";
 import Hotel from "../../resources/Pictures/hotel.png";
 import HotelDb from "../../resources/Pictures/hotelDb2.png";
