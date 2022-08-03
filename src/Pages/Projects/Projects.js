@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../components/Cards/Card";
+import Skills from "../../components/Skills/Skills";
 import Bildir from "../../resources/Pictures/bildir.png";
 import Hotel from "../../resources/Pictures/hotel.png";
 import HotelDb from "../../resources/Pictures/hotelDb2.png";
@@ -12,6 +13,12 @@ const Projects = () => {
 
   return (
     <div className={classes.wrapper}>
+      <div>
+        <h3>Skills</h3>
+      </div>
+      <div>
+        <Skills />
+      </div>
       <div>
         <h3>Projects</h3>
       </div>

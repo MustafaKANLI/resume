@@ -63,12 +63,8 @@ const Navbar = (props) => {
             <Link to="/">
               <div className={classes.link}>Home</div>
             </Link>
-            <Link to="/skills">
-              <div className={classes.link}>Skills</div>
-            </Link>
-
             <Link to="/projects">
-              <div className={classes.link}>Projects</div>
+              <div className={classes.link}>Skills {"-"} Projects</div>
             </Link>
           </div>
         </header>
