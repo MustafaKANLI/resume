@@ -1,7 +1,11 @@
 import React from "react";
 
-const SkillCard = () => {
-  return <div>SkillCard</div>;
+const SkillCard = (props) => {
+  return (
+    <div>
+      <img src={props.src} />
+    </div>
+  );
 };
 
 export default SkillCard;
