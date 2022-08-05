@@ -103,6 +103,24 @@ const Resume = () => {
         firstHeader="Digital Financial Literacy Training"
         secondHeader="TEB Bank"
       />
+
+      <div className={classes.hr}></div>
+
+      <h4 className={classes.cardTitle}>References</h4>
+      <ResumeCard
+        year="from TUSAŞ"
+        firstHeader="Mehmet Evren COŞKUN"
+        secondHeader="Senior Software Engineer"
+        explanation="mevrencoskun@gmail.com"
+      />
+
+      <br></br>
+      <ResumeCard
+        year="from TUSAŞ"
+        firstHeader="Songül DEMİRTAŞ"
+        secondHeader="Project Manager"
+        explanation="songul.demirtas@tai.com.tr"
+      />
     </div>
   );
 };
